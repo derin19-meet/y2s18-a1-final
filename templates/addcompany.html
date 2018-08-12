@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Add a Company</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='addstyle.css') }}">
+</head>
+<body>
+    <h1>Add a Company</h1>
+    <form method="post" action= '/addcompany'>
+        <input type="text" name="company_name" placeholder="Company Name" required> 
+        <input type="text" name="company_info" placeholder="Company info" required>
+        <input type="text" name="company_link" placeholder="link to your website" required>
+        <h2>what kind of stuff your organization take?</h2>
+        <input type="radio" name="company_kind" value="food"> Food<br>
+        <input type="radio" name="company_kind" value="clothes"> Clothes<br>
+        <input type="radio" name="company_kind" value="money"> Money  
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
