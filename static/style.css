@@ -1,7 +1,22 @@
-* {
+*{
     /* Removes extra spacing from all elements on the page */
     padding: 0;
     margin: 0;
 }
 
 /* Put your styles BELOW this line */
+
+#Upper_half{
+            position: fixed;
+            padding:0;
+            margin:0;
+
+            top:0;
+            left:0;
+
+            /* display: block; */
+            width: 100%;
+            height: 62%;
+            background-color: aqua;
+            color: aqua;
+        }
