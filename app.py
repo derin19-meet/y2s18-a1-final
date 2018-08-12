@@ -19,10 +19,10 @@ def add_company_route():
 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
 		return redirect(url_for('home'))
 
-@app.route('/donate/<comp_kind>', methods=['POST'])
-def donate_something():
+@app.route('/donate/<comp_kind>')
+def donate_something(comp_kind):
     things = query_by_kind(comp_kind)
-    return render_template('donations.html', things)
+    return (render_template('donations.html'), things)
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
