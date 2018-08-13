@@ -4,8 +4,44 @@
 
 h1{
     color:grey
+
 }
 
-#homep{
-    float: right
+.homep{
+    float: right;
+    list-style:none;
+}
+
+.homep li {
+    display: inline-block
+}
+
+.topic {
+    font-size: 150%;
+
+}
+
+.top li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", "sans-serif";
+
+}
+
+.homep {
+    background-color: #5bd7d7;
+    border: none;
+    color: black;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.top li a:hover{
+    background-color: grey;
 }
