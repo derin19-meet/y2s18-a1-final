@@ -10,6 +10,9 @@ header{
 }
 
 #Upper_half{
+
+            z-index: 0;
+
             position: fixed;
             padding:0;
             margin:0;
@@ -20,6 +23,8 @@ header{
             /* display: block; */
             width: 100%;
             height: 62%;
+            background-color: #5bd7d7;
+            /* background-color: #1e7b7b; */
 
         }
 
@@ -31,7 +36,9 @@ header{
     }
 
 
-#Slogan{color: #5bd7d7;
+#Slogan{
+        /* color: #5bd7d7; */
+        color: white;
         position: relative;
         top: 54%; }
     
@@ -39,6 +46,9 @@ h1{text-align:center;}
 h3{text-align:center;}
 
 #Bottom_half{
+
+    z-index: 0;
+
     position: fixed;
     padding: 0;
     margin:0;
@@ -50,27 +60,47 @@ h3{text-align:center;}
     width: 100%;
     height: 38%;
 
-    background-color: #5bd7d7;
+    /* background-color: #5bd7d7; */
+    /* background-color: #1e7b7b; */
+    background-color: white;
 }
 
 .Button{
+
+        z-index: 1;
+
         text-decoration-line: none;
         display: block;
         /* width: 600px; */
         /* height: 250px; */
         /* background: rgb(255, 255, 255); */
         /* padding: 10px; */
-        text-align: center;
+
+
         /* border-radius: 5px; */
         /* color:#5bd7d7; */
         /* font-weight: bold; */
         /* font-size: 45px; */
 }
 
+#about{
+    display: block;
+    background-color: white;
+
+}
+
+p{
+    text-align: center;
+    position: relative;
+    top:40%;
+}
+
 #Donate{
     width: 800px;
     height: 250px; 
-    background: rgb(255, 255, 255);
+    /* background:#1e7b7b; */
+    /* background-color: white; */
+    background-color: #1e7b7b;
     padding: 10px; 
     border-radius: 5px;
     color:#5bd7d7;
@@ -81,14 +111,16 @@ h3{text-align:center;}
 #get-donations{
     width: 800px;
     height: 250px; 
-    background: rgb(255, 255, 255);
+    /* background:#1e7b7b; */
+    /* background-color: white; */
+    background-color: #1e7b7b;
     padding: 10px; 
     border-radius: 5px;
     color:#5bd7d7;
     font-weight: bold;
     font-size: 45px;
 }       
-#about{}
+
 
 #sign{
     position: fixed;
@@ -99,7 +131,7 @@ h3{text-align:center;}
     height:38%;
 }
 
-img{width: 100%}
+
 
 
 #User{
@@ -122,12 +154,13 @@ img{width: 100%}
     font-size: 50px;
 } */
 
-.Top_right{
+#about{
+    color: #1e7b7b;
     text-decoration-line: none;
     display:block;
     width: 80px;
     height: 25px;
-    background: #5bd7d7;
+    background-color:white;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
