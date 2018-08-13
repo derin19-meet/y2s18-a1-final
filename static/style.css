@@ -22,11 +22,12 @@
 
 #Name{color: black;
       position:relative; 
-      left: 40%;
-      top: 40%;
-      
+      /* left: 40%; */
+      top: 40%;    
     
     }
+
+h1{text-align:center;}
 
 #Bottom_half{
     position: fixed;
@@ -41,4 +42,17 @@
     height: 38%;
 
     background-color: #5bd7d7;
+}
+
+.Button{
+        display: block;
+        width: 115px;
+        height: 25px;
+        background: #4E9CAF;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+
 }
