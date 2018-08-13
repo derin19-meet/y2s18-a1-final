@@ -47,6 +47,7 @@ h1 {
     border-radius: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    text-decoration:none;
 }
 
 .container .btn:hover {
