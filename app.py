@@ -22,11 +22,11 @@ def add_company_route():
 @app.route('/choice')
 def choose():
     return render_template("user.html")
-	
+
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
     things = query_by_kind(comp_kind)
-    return render_template('donations.html', things=things)
+    return render_template('donations.html', things=things, comp_kind=comp_kind)
 
 # Running the Flask app
 if __name__ == "__main__":
