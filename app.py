@@ -22,7 +22,8 @@ def add_company_route():
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
     things = query_by_kind(comp_kind)
-    return (render_template('donations.html'), things)
+    return render_template('donations.html', things=things)
+
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
