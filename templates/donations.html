@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>companies</title>
+        <title>Companies</title>
         <link rel="stylesheet" type="text/css" href="../static/donations.css">
     </head>
 
     <body>
-            <h1 class="kind"> Category: {{things[0].kind}}</h1>  
+            <h1 class="kind"> Category you chose: {{things[0].kind}}</h1>  
             {% for a in things %}        
     <div>  
         <h2 class = "name">Company Name: {{a.name}}</h2>
         <h3 class="info">Company info: {{a.info}}</h3>
-        <h3 class="kind">what do the company take: {{a.kind}}</h3>
-        <h3 class="website">link to the Company website: {{a.link}}</h3>
+        <h3 class="kind">what does the company take: {{a.kind}}</h3>
+        <h3 class="website">link to the company website: {{a.link}}</h3>
     </div>
         {% endfor %}        
 
-
-        
+       
 </body>
 </html>
