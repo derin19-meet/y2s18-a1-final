@@ -19,6 +19,14 @@ def add_company_route():
 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
 		return redirect(url_for('home'))
 
+# @app.route('/adduser', methods=['GET', 'POST'])
+# def add_user_route():
+# 	if request.method == 'GET':
+# 		return render_template('newprofile.html')
+# 	else:
+# 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
+# 		return redirect(url_for('home'))
+
 @app.route('/choice')
 def choose():
     return render_template("user.html")
