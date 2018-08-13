@@ -1,6 +1,6 @@
 # Database related imports
 # Make sure to import your tables!
-from model import Base, Company
+from model import Base, Company, User
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -28,3 +28,16 @@ def query_by_kind(kind):
 def delete_all_companys():
 	session.query(Company).delete()
 	session.commit()
+def add_user(user_username, user_password):
+	user1 = User(username = user_username, password = user_password)
+	session.add(user1)
+	session.commit()
+
+def check_user(username, password):
+	users = session.query(User).filter_by(
+	username=username).all()
+	a=False
+	for i in users:
+		if (i.password==password):
+			a=True
+	return a
