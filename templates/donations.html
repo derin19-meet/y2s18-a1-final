@@ -6,10 +6,8 @@
     </head>
 
     <body>
-            {% for a in things %}
-    
-        <h1 class="kind"> I Want To Donate: {{a.kind}}</h1>  
-        
+            <h1 class="kind"> Category: {{things[0].kind}}</h1>  
+            {% for a in things %}        
     <div>  
         <h2 class = "name">Company Name: {{a.name}}</h2>
         <h3 class="info">Company info: {{a.info}}</h3>

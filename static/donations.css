@@ -4,11 +4,11 @@ h1 { background-color: #5bd7d7; color:white; font-family: 'Lato', sans-serif; fo
 h2 {color: #5bd7d7; font-family: 'Lato', sans-serif;font-weight:bold;}
 h3 {color: #5bd7d7; font-family: 'Lato', sans-serif;}
 
-/* div.website{
-    position:;
+div.website{
+    position:absolute;
     left:400px;
     bottom:20%;
-} */
+}
 
 div {
     border-bottom: 5px solid #5bd7d7;
