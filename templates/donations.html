@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR_TITLE_HERE</title>
+        <link rel="stylesheet" type="text/css" href="../static/donations.css">
+    </head>
+
+    <body>
+        {% for a in things %}
+        <p>
+            Company Name: {{a.name}}<br>
+            Company info: {{a.info}}<br>
+            link to the Company website: {{a.link}}<br>
+            what do the company take: {{a.kind}}<br>
+        </p>
+        {% endfor %}        
+
+
+        
+    </body>
+</html>

@@ -5,6 +5,9 @@
 }
 
 /* Put your styles BELOW this line */
+header{
+    background-image: url("hand.jpg")
+}
 
 #Upper_half{
             position: fixed;
@@ -23,11 +26,17 @@
 #Name{color: black;
       position:relative; 
       /* left: 40%; */
-      top: 40%;    
+      top: 50%;    
     
     }
 
+
+#Slogan{color: #4E9CAF;
+        position: relative;
+        top: 54%; }
+    
 h1{text-align:center;}
+h3{text-align:center;}
 
 #Bottom_half{
     position: fixed;
