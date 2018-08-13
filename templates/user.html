@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Userpage</title>
-        <link rel="stylesheet" type="text/css" href="../static/userstyle.css">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'userstyle.css')}}">
     </head>
 
 
@@ -14,18 +14,18 @@
         <h1>What Would You Like To Donate? </h1>
        
         <div class="container">
-            <img src="food.jpg" alt="food" style="width:100%">
-            <button class="btn">FOOD</button>
+            <img src="{{url_for('static',filename ='food.jpg')}}" alt="food" style="width:100%">
+            <a class="btn" href="/donate/food">FOOD</a>
         </div>
 
         <div class="container">
-            <img src="clothes.jpg" alt="clothes" style="width:100%">
-            <button class="btn">CLOTHES</button> 
+            <img src="{{url_for('static',filename ='clothes.jpg')}}" alt="clothes" style="width:100%">
+            <a class="btn" href="/donate/clothes">CLOTHES</a> 
         </div>
         
         <div class="container">  
-            <img src="money.jpg" alt="money" style="width:100%">
-            <button class="btn">MONEY</button>   
+            <img src="{{url_for('static',filename ='money.jpg')}}" alt="money" style="width:100%">
+            <a class="btn" href="/donate/money">MONEY</a>   
         </div>
 
 

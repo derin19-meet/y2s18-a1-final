@@ -19,6 +19,10 @@ def add_company_route():
 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
 		return redirect(url_for('home'))
 
+@app.route('/choice')
+def choose():
+    return render_template("user.html")
+	
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
     things = query_by_kind(comp_kind)
