@@ -35,11 +35,11 @@ def add_user(user_username, user_password):
 	session.commit()
 
 def check_user(username, password):
-	users = session.query(User).filter_by(
-	username=username).all()
-	a=False
-	for i in users:
-		if (i.password==password):
-			a=True
-			break
-	return(a)
+	user = session.query(User).filter_by(
+	username=username).first()
+	if(user.password==password):
+		return(True)
+def query_by_username(username):
+	user = session.query(User).filter_by(
+		username = username).first()
+	return user

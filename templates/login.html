@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    <title>sign up for our website!</title>
+    <title>log in for our website!</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='addstyle.css') }}">
 </head>
 <body>
-    <h1>sign up!</h1>
-    <form method="post" action= '/adduser'>
+    <h1>log in!</h1>
+    <form method="post" action= '/login'>
         <input type="text" name="username" placeholder="Username" required> 
         <input type="password" name="password" placeholder="password" required>
         <input type="submit" value="Submit">
