@@ -37,8 +37,9 @@ def add_user(user_username, user_password):
 def check_user(username, password):
 	user = session.query(User).filter_by(
 	username=username).first()
-	if(user.password==password):
-		return(True)
+	if user !=None:
+		if(user.password==password):
+			return(True)
 def query_by_username(username):
 	user = session.query(User).filter_by(
 		username = username).first()

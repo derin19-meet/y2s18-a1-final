@@ -35,6 +35,11 @@ def add_user_route():
 def choose():
     return render_template("user.html")
 
+@app.route('/profile')
+def your_profile():
+    return render_template("profile.html")
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def user_login():
 	if request.method == 'POST':
@@ -57,7 +62,7 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-    return render_template("about.html")
+		return redirect(url_for('home'))
 
 
 @app.route('/donate/<comp_kind>')
