@@ -56,8 +56,8 @@ h3{text-align:center;}
 .Button{
         text-decoration-line: none;
         display: block;
-        width: 400px;
-        height: 200px;
+        width: 600px;
+        height: 250px;
         background: rgb(255, 255, 255);
         padding: 10px;
         text-align: center;
@@ -79,13 +79,13 @@ h3{text-align:center;}
 
 #User{
     position:fixed;
-    left:25%;
+    left:17%;
     top:66%;
 }
 
 #Company{
     position:fixed;
-    right:25%;
+    right:17%;
     top:66%;
 }
 
