@@ -6,13 +6,20 @@
     </head>
 
     <body>
-            <h1 class="kind"> Category you chose: {{things[0].kind}}</h1>  
-            {% for a in things %}        
+        <div class="back">
+                <ul>
+                    <li class="homebtn"><a href="">BACK</a></li>
+                </ul>
+        </div>
+            <h1 class="kind">  {{things[0].kind}} companies:</h1>  
+            {% for a in things %}       
+    
+
     <div>  
-        <h2 class = "name">Company Name: {{a.name}}</h2>
-        <h3 class="info">Company info: {{a.info}}</h3>
-        <h3 class="kind">what does the company take: {{a.kind}}</h3>
-        <h3 class="website">link to the company website: {{a.link}}</h3>
+        <h2 class = "name">{{a.name}}</h2>
+        <h3 class="info">info: {{a.info}}</h3>
+        <h3 class="kind">what do the company take: {{a.kind}}</h3>
+        <h3 class="website">link to the Company website: {{a.link}}</h3>
     </div>
         {% endfor %}        
 
