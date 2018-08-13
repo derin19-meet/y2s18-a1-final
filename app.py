@@ -2,7 +2,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
 
 # Add functions you need from databases.py to the next line!
-from databases import add_company, query_by_kind
+from databases import add_company, query_by_kind, add_user, check_user
 
 # Starting the flask app
 app = Flask(__name__)
@@ -19,13 +19,13 @@ def add_company_route():
 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
 		return redirect(url_for('home'))
 
-# @app.route('/adduser', methods=['GET', 'POST'])
-# def add_user_route():
-# 	if request.method == 'GET':
-# 		return render_template('newprofile.html')
-# 	else:
-# 		add_company(request.form['company_name'],request.form["company_info"],request.form["company_link"],request.form["company_kind"])
-# 		return redirect(url_for('home'))
+@app.route('/adduser', methods=['GET', 'POST'])
+def add_user_route():
+	if request.method == 'GET':
+		return render_template('newprofile.html')
+	else:
+		add_user(request.form['username'],request.form["password"])
+		return redirect(url_for('choose'))
 
 @app.route('/choice')
 def choose():
