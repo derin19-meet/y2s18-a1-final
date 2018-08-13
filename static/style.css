@@ -56,17 +56,39 @@ h3{text-align:center;}
 .Button{
         text-decoration-line: none;
         display: block;
-        width: 600px;
-        height: 250px;
-        background: rgb(255, 255, 255);
-        padding: 10px;
+        /* width: 600px; */
+        /* height: 250px; */
+        /* background: rgb(255, 255, 255); */
+        /* padding: 10px; */
         text-align: center;
-        border-radius: 5px;
-        color:#5bd7d7;
-        font-weight: bold;
-        font-size: 45px;
-
+        /* border-radius: 5px; */
+        /* color:#5bd7d7; */
+        /* font-weight: bold; */
+        /* font-size: 45px; */
 }
+
+#Donate{
+    width: 800px;
+    height: 250px; 
+    background: rgb(255, 255, 255);
+    padding: 10px; 
+    border-radius: 5px;
+    color:#5bd7d7;
+    font-weight: bold;
+    font-size: 45px;
+
+} 
+#get-donations{
+    width: 800px;
+    height: 250px; 
+    background: rgb(255, 255, 255);
+    padding: 10px; 
+    border-radius: 5px;
+    color:#5bd7d7;
+    font-weight: bold;
+    font-size: 45px;
+}       
+#about{}
 
 #sign{
     position: fixed;
@@ -77,15 +99,18 @@ h3{text-align:center;}
     height:38%;
 }
 
+img{width: 100%}
+
+
 #User{
     position:fixed;
-    left:17%;
+    left:5%;
     top:66%;
 }
 
 #Company{
     position:fixed;
-    right:17%;
+    right:5%;
     top:66%;
 }
 
