@@ -1,8 +1,8 @@
 body{background-color:white;}
-h1 { background-color: #5bd7d7; color:white; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; 
-    margin: 0 0 20px; font-weight:bold;}
-h2 {color: #5bd7d7; font-family: 'Lato', sans-serif;font-weight:bold;}
-h3 {color: #5bd7d7; font-family: 'Lato', sans-serif;}
+h1 {/* background-color: #5bd7d7;*/ color:grey; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; 
+    margin: 0 0 20px; font-weight:bold; }
+h2 {color: black; font-family: 'Lato', sans-serif;font-weight:900; font-size: 30px; }
+h3 {color: black; font-family: 'Lato', sans-serif;}
 
 div.website{
     position:absolute;
@@ -15,8 +15,21 @@ div {
 }
 
 
+.homebtn {
+    background-color: #5bd7d7;
+    border: none;
+    color: black;
+    padding: 10px 5px;
+    /*text-align: center;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
+    float: right;
 
 
 
 
 /* #5bd7d7 */
+
