@@ -17,4 +17,4 @@ class Company(Base):
     kind = Column(String)
 
     def __repr__(self):
-        return ("organization name: {}, info:{}, link: {}, what do they take: {}".format(self.name, self.info, self.link, self,kind))
+        return ("organization name: {}, info:{}, link: {}, what do they take: {}".format(self.name, self.info, self.link, self.kind))

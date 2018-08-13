@@ -31,7 +31,7 @@ header{
     }
 
 
-#Slogan{color: #4E9CAF;
+#Slogan{color: #5bd7d7;
         position: relative;
         top: 54%; }
     
@@ -55,13 +55,34 @@ h3{text-align:center;}
 
 .Button{
         display: block;
-        width: 115px;
-        height: 25px;
-        background: #4E9CAF;
+        width: 400px;
+        height: 200px;
+        background: rgb(255, 255, 255);
         padding: 10px;
         text-align: center;
         border-radius: 5px;
-        color: white;
+        color:#5bd7d7;
         font-weight: bold;
 
+}
+
+#sign{
+    position: fixed;
+    bottom:10px;
+    left:15%;
+
+    width:80%;
+    height:38%;
+}
+
+#User{
+    position:fixed;
+    left:25%;
+    top:66%;
+}
+
+#Company{
+    position:fixed;
+    right:25%;
+    top:66%;
 }
