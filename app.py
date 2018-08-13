@@ -23,6 +23,11 @@ def add_company_route():
 def choose():
     return render_template("user.html")
 
+@app.route('/about')
+def aboutus():
+    return render_template("about.html")
+
+
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
     things = query_by_kind(comp_kind)
