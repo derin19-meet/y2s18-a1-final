@@ -5,6 +5,9 @@
 }
 
 /* Put your styles BELOW this line */
+header{
+    background-image: url("hand.jpg")
+}
 
 #Upper_half{
             position: fixed;
