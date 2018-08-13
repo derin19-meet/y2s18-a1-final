@@ -6,11 +6,16 @@
     </head>
 
     <body>
-        {% for a in things %}
-            <div><h2 class = "name">Company Name: {{a.name}}</h2>
-            <h3 class="info">Company info: {{a.info}}</h3>
-            <h3 class="website">link to the Company website: {{a.link}}</h3>
-            <h3 class="kind">what do the company take: {{a.kind}}</h3></div>
+            {% for a in things %}
+    
+        <h1 class="kind"> I Want To Donate: {{a.kind}}</h1>  
+        
+    <div>  
+        <h2 class = "name">Company Name: {{a.name}}</h2>
+        <h3 class="info">Company info: {{a.info}}</h3>
+        <h3 class="kind">what do the company take: {{a.kind}}</h3>
+        <h3 class="website">link to the Company website: {{a.link}}</h3>
+    </div>
         {% endfor %}        
 
 

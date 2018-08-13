@@ -54,6 +54,7 @@ h3{text-align:center;}
 }
 
 .Button{
+        text-decoration-line: none;
         display: block;
         width: 400px;
         height: 200px;
@@ -63,6 +64,7 @@ h3{text-align:center;}
         border-radius: 5px;
         color:#5bd7d7;
         font-weight: bold;
+        font-size: 45px;
 
 }
 
@@ -86,3 +88,28 @@ h3{text-align:center;}
     right:25%;
     top:66%;
 }
+
+/* #donate{ */
+    /* font-size: 50px; */
+/* } */
+
+/* #get_donations{
+    font-size: 50px;
+} */
+
+.Top_right{
+    text-decoration-line: none;
+    display:block;
+    width: 80px;
+    height: 25px;
+    background: #5bd7d7;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+    position: fixed;
+    right: 10px;
+
+    
+}
+
