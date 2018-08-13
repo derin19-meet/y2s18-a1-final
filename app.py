@@ -1,16 +1,20 @@
 # Flask-related imports
-from flask import Flask, render_template, url_for, redirect, request, session
+from flask import Flask, render_template, url_for, redirect, request
+from flask import session as login_session
 
 # Add functions you need from databases.py to the next line!
-from databases import add_company, query_by_kind, add_user, check_user
+from databases import *
 
 # Starting the flask app
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "Your_secret_string"
 
 # App routing code here
 @app.route('/')
 def home():
     return render_template('home.html')
+
+
 @app.route('/addcompany', methods=['GET', 'POST'])
 def add_company_route():
 	if request.method == 'GET':
@@ -30,6 +34,26 @@ def add_user_route():
 @app.route('/choice')
 def choose():
     return render_template("user.html")
+
+@app.route('/login', methods=['GET', 'POST'])
+def user_login():
+	if request.method == 'POST':
+		if (check_user(request.form['username'],request.form["password"])):
+			user=query_by_username(request.form['username'])
+			login_session['id']=user.id
+			login_session['username']=user.username
+			return redirect(url_for('choose'))
+		else:
+			return render_template("login.html")
+	else:
+		return render_template("login.html")
+
+@app.route('/logout')
+def user_logout():
+		del login_session['id']
+		del login_session['username']
+		return redirect(url_for('home'))
+
 
 @app.route('/about')
 def aboutus():
