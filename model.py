@@ -19,10 +19,10 @@ class Company(Base):
     def __repr__(self):
         return ("organization name: {}, info:{}, link: {}, what do they take: {}".format(self.name, self.info, self.link, self.kind))
 
-class User(Base):
-    __tablename__ = "user"
-    username = Column(String)
-    password = Column(String)
-    donted_to = Column(list)
-    def __repr__(self):
-        return("username: {}, password: {}, donated to: {}".format(self.username,self.password), self.donted_to)
+# class User(Base):
+#     __tablename__ = "user"
+#     username = Column(String)
+#     password = Column(String)
+#     donted_to = Column(list)
+#     def __repr__(self):
+#         return("username: {}, password: {}, donated to: {}".format(self.username,self.password), self.donted_to)
