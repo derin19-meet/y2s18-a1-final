@@ -1,24 +1,50 @@
-body{ background-image: url("bg4.jpeg");}
-h1 {/* background-color: #5bd7d7;*/ color:#5bd7d7; font-family: 'Lato', sans-serif; font-size: 80px; font-weight: 900; line-height: 58px; 
-    margin: 0 0 20px; font-weight:bold; }
-h2 {color: black; font-family: 'Lato', sans-serif;font-weight:900; font-size: 30px; }
-h3 {color: black; font-family: 'Lato', sans-serif;}
-
-div.website{
-    position:absolute;
-    left:400px;
-    bottom:20%;
+body {
+    background-color: #404040;
 }
 
-/*div {
-    border-bottom: 5px solid #5bd7d7;
-}*/
+h1 {color: white; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 80px; 
+    font-weight: 900;
+    font-weight:bold;
+    position: relative;
+    left:300px;
+    top:25px;
+}
+
+h2 {color: #ff0080; 
+    font-family: 'Lato', sans-serif;
+    font-weight:900; 
+    font-size: 30px; 
+}
+
+h3 {color: white; 
+    font-family: 'Lato', sans-serif;
+}
 
 
 .back {
-    background-color: #5bd7d7;
+    background-color: #ff0080;
     border: none;
-    color: black;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
+    float: right;
+}
+
+.back:hover {
+    background-color: white;
+    color: #ff0080;
+}
+
+.button {
+    background-color: #ff0080;
+    border: none;
+    color: white;
     padding: 10px 15px;
     /*text-align: center;*/
     text-decoration: none;
@@ -29,6 +55,9 @@ div.website{
     float: right;
 }
 
+.button:hover {
+    background-color: white;
+    color: #ff0080;
+}
 
-/* #5bd7d7 */
 
