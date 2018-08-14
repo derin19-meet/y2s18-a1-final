@@ -27,7 +27,7 @@ def query_by_kind(kind):
 	return company
 
 def query_comp_id(id):
-	company = session.query(Company).filter_by(id=int(id)).first()
+	company = session.query(Company).filter_by(id=id).first()
 	return company
 
 def delete_all_companys():
@@ -53,5 +53,3 @@ def add_comp_to_user(user, compid):
 
 	user.donate+= " " + compid
 	return user
-def list_to_int(id,list1):
-		session.query(User).filter(User.id.in_((list1))).all()

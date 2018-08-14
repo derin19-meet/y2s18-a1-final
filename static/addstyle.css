@@ -1,7 +1,48 @@
 body{
     background-color: #404040;
 }
+.homep{
+    float: right;
+    list-style:none;
+    right:5%;
+}
+.homep {
+    background-color: #ff0080;
+    border: none;
+    color: white;
+    padding: 8px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: "Lato", "sans-serif";
 
+}
+
+.homep:hover {
+    background-color: white;
+    color: #ff0080;
+}
+
+
+
+.profile{
+    float: left;
+    list-style:none;
+}
+.profile{
+    background-color: #ff0080;
+    border: none;
+    color: white;
+    padding: 8px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: "Lato", "sans-serif";
+}
 input[type=text], select {
     width: 40%;
     padding: 12px 20px;
