@@ -28,8 +28,11 @@ def add_user_route():
 	if request.method == 'GET':
 		return render_template('newprofile.html')
 	else:
-		add_user(request.form['username'],request.form["password"])
-		return redirect(url_for('choose'))
+		if (request.form["password"]==request.form["repassword"]):
+			add_user(request.form['username'],request.form["password"])
+			return redirect(url_for('choose'))
+		else:
+			return render_template('newprofile.html')
 
 @app.route('/choice')
 def choose():
@@ -62,7 +65,7 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-		return redirect(url_for('home'))
+		return render_template("about.html")
 
 
 @app.route('/donate/<comp_kind>')
