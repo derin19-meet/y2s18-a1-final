@@ -53,4 +53,5 @@ def add_comp_to_user(user, compid):
 
 	user.donate+= " " + compid
 	return user
-
+def list_to_int(id,list1):
+		session.query(User).filter(User.id.in_((list1))).all()

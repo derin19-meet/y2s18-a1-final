@@ -57,6 +57,8 @@ def add_to_profile(comp_id):
 def your_profile():
 	if (login_session['username']!=None):
 		user1=query_by_username(login_session['username'])
+		companys = (user1.donate).split(" ")
+		companys = list(map(int, companys))
 		return render_template("profile.html", user1=user1)
 	else:	
 		return redirect(url_for('home'))
