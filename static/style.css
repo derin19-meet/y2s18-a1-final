@@ -13,9 +13,6 @@ body{
     font-family: 'Lato', sans-serif;    
 }
 
-#sign-up{
-    opacity: 0.9;
-}
 
 
 #Upper_half{
@@ -106,6 +103,11 @@ h3{text-align:center;}
         /* font-weight: bold; */
         /* font-size: 45px; */
 }
+
+#sign-up{
+    opacity: 0.9;
+}
+
 
 
 .Button:hover {opacity: 1}
@@ -232,8 +234,8 @@ p{
     text-decoration-line: none;
     position: fixed;
     text-align: center;
-    left: 40%;
     top: 50%;
+    left: 35%;
 }
 
 #sign-up{
@@ -262,7 +264,7 @@ p{
     text-align: center;
     text-decoration-line: none;
     position: fixed;
-    right: 40%;
+    right: 35%;
     top: 50%;
     
 }
