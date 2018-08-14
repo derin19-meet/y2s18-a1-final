@@ -171,23 +171,49 @@ p{
     
 }
 
-#log-in{
+/* #log-in{
     width: 80px;
     height: 30px;
     background-color: white;    
-    position: relative;
-    top: 65%;
-    left: 700px;
+    position: fixed;
+    top: 49%;
+    left: 700px; */
 
-}
 
-#sign-up{
+
+/* #sign-up{
     width: 80px;
     height: 30px;
     background-color: white;
-    position: relative;
-    top: 50%;
+    position: fixed;
+    top: 49%;
     left:1153px;
-    background-color: white;
+    background-color: white; */
 
+
+
+#sign{
+    width: 80px;
+    height:30px;
+    display: block;
+    background-color: white;
+    text-decoration-line: none;
+    position: fixed;
+    text-align: center;
+    left: 40%;
+    top: 50%;
 }
+
+
+#log{
+    width: 80px;
+    height:30px;
+    display: block;
+    background-color: white;
+    text-align: center;
+    text-decoration-line: none;
+    position: fixed;
+    right: 40%;
+    top: 50%;
+}
+

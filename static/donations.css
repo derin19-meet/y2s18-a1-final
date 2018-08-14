@@ -1,5 +1,5 @@
-body{background-color:white;}
-h1 {/* background-color: #5bd7d7;*/ color:grey; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; 
+body{ background-image: url("bg4.jpeg");}
+h1 {/* background-color: #5bd7d7;*/ color:#5bd7d7; font-family: 'Lato', sans-serif; font-size: 80px; font-weight: 900; line-height: 58px; 
     margin: 0 0 20px; font-weight:bold; }
 h2 {color: black; font-family: 'Lato', sans-serif;font-weight:900; font-size: 30px; }
 h3 {color: black; font-family: 'Lato', sans-serif;}
@@ -15,7 +15,7 @@ div.website{
 }*/
 
 
-.homebtn {
+.back {
     background-color: #5bd7d7;
     border: none;
     color: black;
@@ -29,12 +29,6 @@ div.website{
     float: right;
 }
 
-.left{
-    float:right;
-}
 
-.right{
-    float:left;
-}
 /* #5bd7d7 */
 
