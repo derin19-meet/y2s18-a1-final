@@ -101,6 +101,11 @@ h1 {
     border-radius: 8px;
 }
 
+.homep:hover {
+    background-color: white;
+    color: #ff0080;
+}
+
 
 .profile{
     float: left;
@@ -116,4 +121,9 @@ h1 {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+}
+
+.profile:hover {
+    background-color: white;
+    color: #ff0080;
 }
