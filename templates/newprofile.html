@@ -5,12 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='addstyle.css') }}">
 </head>
 <body>
-    <h1>sign up!</h1>
+    <center><h1>sign up!</h1></center>
     <form method="post" action= '/adduser'>
-        <input type="text" name="username" placeholder="Username" required> 
-        <input type="password" name="password" placeholder="password" required>
-        <input type="password" name="repassword" placeholder="retype password" required>
-        <input type="submit" value="Submit">
+       <center> <input type="text" name="username" placeholder="Username" required></center><br>
+       <center><input type="password" name="password" placeholder="password" required></center><br>
+        <center><input type="password" name="repassword" placeholder="retype password" required></center><br>
+        <center><input type="submit" value="Submit"></center>
     </form>
+    
+    
 </body>
 </html>

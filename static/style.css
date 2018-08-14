@@ -9,6 +9,10 @@ header{
     background-image: url("hand.jpg")
 }
 
+body{
+    font-family: 'Lato', sans-serif;    
+}
+
 #Upper_half{
 
             z-index: 0;
@@ -23,7 +27,7 @@ header{
             /* display: block; */
             width: 100%;
             height: 62%;
-            background-color: #5bd7d7;
+            background-color: #333333;
             /* background-color: #1e7b7b; */
 
         }
@@ -62,15 +66,30 @@ h3{text-align:center;}
 
     /* background-color: #5bd7d7; */
     /* background-color: #1e7b7b; */
-    background-color: white;
+    background-color: #1a1a1a;
 }
 
 .Button{
+
 
         z-index: 1;
 
         text-decoration-line: none;
         display: block;
+        
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.5;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        
         /* width: 600px; */
         /* height: 250px; */
         /* background: rgb(255, 255, 255); */
@@ -82,6 +101,10 @@ h3{text-align:center;}
         /* font-weight: bold; */
         /* font-size: 45px; */
 }
+
+
+.Button:hover {opacity: 1}
+
 
 #about{
     display: block;
@@ -96,27 +119,27 @@ p{
 }
 
 #Donate{
-    width: 700px;
+    width: 450px;
     height: 250px; 
     /* background:#1e7b7b; */
     /* background-color: white; */
-    background-color: #1e7b7b;
+    background-color: #262626;
     padding: 10px; 
     border-radius: 5px;
-    color:#5bd7d7;
+    color:#ff0080;
     font-weight: bold;
     font-size: 45px;
 
-} 
+}
 #get-donations{
-    width: 700px;
+    width: 450px;
     height: 250px; 
     /* background:#1e7b7b; */
     /* background-color: white; */
-    background-color: #1e7b7b;
+    background-color: #262626;
     padding: 10px; 
     border-radius: 5px;
-    color:#5bd7d7;
+    color:#ff0080;
     font-weight: bold;
     font-size: 45px;
 }       
@@ -139,6 +162,8 @@ p{
     left:5%;
     top:66%;
 }
+
+
 
 #Company{
     position:fixed;
@@ -204,6 +229,23 @@ p{
     top: 50%;
 }
 
+#sign-up{
+    position: relative;
+    left:0%;
+    top:22%;
+    color:black;
+    text-align: center;
+    
+}
+
+#log-in{
+    position:relative;
+    left: 0%;
+    top:22%;
+    color:black;
+    text-align: center;
+}
+
 
 #log{
     width: 80px;
@@ -215,5 +257,6 @@ p{
     position: fixed;
     right: 40%;
     top: 50%;
+    
 }
 
