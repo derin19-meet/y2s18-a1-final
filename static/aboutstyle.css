@@ -68,37 +68,37 @@ body {
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Lato", "sans-serif";
 }
 
 .resize1{
     position: fixed;
-    bottom: 15%;
-    left: 5%;
+    bottom: 10%;
+    left: 4%;
     border-radius: 150px;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     color: black;
     font-size: 16px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .p1{
     position: fixed;
-    bottom: 50px;
-    left: 130px;
+    bottom: 25px;
+    left: 85px;
     font-family: "Lato", "sans-serif";
     font-weight: bold;
 }
 
 .resize2{
     position: fixed;
-    bottom: 15%;
-    left: 29%;
+    bottom: 10%;
+    left: 28%;
     border-radius: 150px;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     color: black;
     font-size: 16px;
     border: 1px solid black;
@@ -106,19 +106,19 @@ p {
 
 .p2{
     position: fixed;
-    bottom: 50px;
-    left: 580px;
+    bottom: 25px;
+    left: 440px;
     font-family: "Lato", "sans-serif";
     font-weight: bold;
 }
 
 .resize3{
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
     left: 52%;
     border-radius: 150px;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     color: black;
     font-size: 16px;
     border: 1px solid black;
@@ -126,19 +126,19 @@ p {
 
 .p3{
     position: fixed;
-    bottom: 50px;
-    left: 1000px;
+    bottom: 25px;
+    left: 753px;
     font-family: "Lato", "sans-serif";
     font-weight: bold;
 }
 
 .resize4{
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
     left: 75%;
     border-radius: 150px;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     color: black;
     font-size: 16px;
     border: 1px solid black;
@@ -146,8 +146,8 @@ p {
 
 .p4{
     position: fixed;
-    bottom: 50px;
-    left: 1400px;
+    bottom: 25px;
+    left: 1050px;
     font-family: "Lato", "sans-serif";
     font-weight: bold;
 }
@@ -158,4 +158,8 @@ p {
 
 #description2{
     color: #e6e6e6;
+}
+
+#bottom{
+    background-color: #e6e6e6;
 }
