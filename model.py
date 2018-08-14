@@ -24,5 +24,6 @@ class User(Base):
     id = Column(Integer, primary_key = True)
     username = Column(String, unique=True)
     password = Column(String)
+    donate = Column(String)
     def __repr__(self):
         return("username: {}, password: {}".format(self.username,self.password))

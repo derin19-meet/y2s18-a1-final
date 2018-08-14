@@ -25,12 +25,17 @@ def query_by_kind(kind):
 	company = session.query(Company).filter_by(
 		kind=kind).all()
 	return company
+
+def query_comp_id(id):
+	company = session.query(Company).filter_by(id=int(id)).first()
+	return company
+
 def delete_all_companys():
 	session.query(Company).delete()
 	session.commit()
 ########## user stuff!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
-def add_user(user_username, user_password):
-	user1 = User(username = user_username, password = user_password)
+def add_user(user_username, user_password, user_donated):
+	user1 = User(username = user_username, password = user_password, donate = user_donated)
 	session.add(user1)
 	session.commit()
 
@@ -44,3 +49,8 @@ def query_by_username(username):
 	user = session.query(User).filter_by(
 		username = username).first()
 	return user
+def add_comp_to_user(user, compid):
+
+	user.donate+= " " + compid
+	return user
+
