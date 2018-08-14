@@ -62,7 +62,7 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-		return redirect(url_for('home'))
+		return render_template("about.html")
 
 
 @app.route('/donate/<comp_kind>')
