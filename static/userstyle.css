@@ -27,7 +27,7 @@ body{
 h1.topic {
     margin-left: auto;
     margin-right: auto;
-    width: 8em
+   
 } 
 
 h1 {
@@ -35,7 +35,8 @@ h1 {
     font-size: 300%;
     color:#5bd7d7;
     position: relative;
-    left:30%;
+    left:60px;
+    top:50px;
 }
 
 
@@ -44,8 +45,8 @@ h1 {
     width: 100%;
     max-width: 400px;
     display:inline-block; 
-    left: 20%;
-    
+    left: 50px;
+    top:70px;
 }
 
 .container img {
@@ -96,6 +97,7 @@ h1 {
 .homep{
     float: right;
     list-style:none;
+    right:5%;
 }
 .homep {
     background-color: #5bd7d7;
@@ -108,6 +110,23 @@ h1 {
     font-size: 16px;
     border-radius: 8px;
     position: relative;
+}
 
 
+
+.profile{
+    float: left;
+    list-style:none;
+}
+.profile{
+    background-color: #5bd7d7;
+    border: none;
+    color: black;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
 }
