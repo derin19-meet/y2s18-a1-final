@@ -24,7 +24,7 @@ h1 {
     color:white;
     font-weight:900;
     position: relative;
-    left:200px;
+    left: 285px;
     top:50px;
     font-family: "Lato", "sans-serif";
 }
@@ -93,18 +93,21 @@ h1 {
     background-color: #ff0080;
     border: none;
     color: white;
-    padding: 10px 5px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    font-family: "Lato", "sans-serif";
+
 }
 
 .homep:hover {
     background-color: white;
     color: #ff0080;
 }
+
 
 
 .profile{
@@ -115,15 +118,17 @@ h1 {
     background-color: #ff0080;
     border: none;
     color: white;
-    padding: 10px 5px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    font-family: "Lato", "sans-serif";
 }
 
 .profile:hover {
     background-color: white;
     color: #ff0080;
 }
+
