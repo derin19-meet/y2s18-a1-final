@@ -8,7 +8,11 @@
     <body>
         <div class="back">
                 <ul>
+<<<<<<< HEAD
                     <li class="homebtn"><a href="/">BACK</a></li>
+=======
+                    <li class="homebtn"><a href="home.html">BACK</a></li>
+>>>>>>> 9be7e4dc6133a5a1a4a3e9e7c5affe63881c3444
                 </ul>
         </div>
             <h1 class="kind">  {{things[0].kind}} companies:</h1>  
@@ -17,10 +21,13 @@
 
     <div>  
         <h2 class = "name">{{a.name}}</h2>
-        <h3 class="info">info: {{a.info}}</h3>
-        <h3 class="kind">what do the company take: {{a.kind}}</h3>
-        <h3 class="website">link to the Company website: {{a.link}}</h3>
+        <h3 class="info"><u>info:</u> {{a.info}}</h3>
+        <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>
+        <h3 class="website"><u>link to the Company website:</u></h3>
+        <a class = "website"><a href="{{a.link}}"></a>
     </div>
+
+        
         {% endfor %}        
 
        

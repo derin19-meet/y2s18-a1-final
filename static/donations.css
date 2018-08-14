@@ -10,16 +10,16 @@ div.website{
     bottom:20%;
 }
 
-div {
+/*div {
     border-bottom: 5px solid #5bd7d7;
-}
+}*/
 
 
 .homebtn {
     background-color: #5bd7d7;
     border: none;
     color: black;
-    padding: 10px 5px;
+    padding: 10px 15px;
     /*text-align: center;*/
     text-decoration: none;
     display: inline-block;
@@ -27,13 +27,14 @@ div {
     border-radius: 8px;
     position: relative;
     float: right;
+}
 
-<<<<<<< HEAD
+.left{
+    float:right;
+}
 
-
-
+.right{
+    float:left;
+}
 /* #5bd7d7 */
 
-=======
-/* #5bd7d7 */
->>>>>>> a0e7e869197c156150327b72e0198affa015c226
