@@ -5,17 +5,22 @@ body{
     left:0;
     display: block;
     width: 100%;
-    height: 95%; 
+    height: 50%; 
 
 }
 
- 
+h1.topic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+} 
 
 h1 {
     font-family: 'Lato', sans-serif;
     font-size: 300%;
-    color:black;
+    color:#5bd7d7;
     position: relative;
+    left:30%;
 }
 
 
@@ -24,6 +29,8 @@ h1 {
     width: 100%;
     max-width: 400px;
     display:inline-block; 
+    left: 20%;
+    
 }
 
 .container img {
@@ -49,9 +56,15 @@ h1 {
 }
 
 .container .btn:hover {
-    background-color: black;
+    background-color: #5bd7d7;
     color: white;
 }
+
+
+
+IMG.displayed {
+    }
+
 
 /* #bottom {
     position: fixed;
