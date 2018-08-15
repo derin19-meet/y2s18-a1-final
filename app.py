@@ -61,11 +61,16 @@ def add_to_profile(comp_id):
 def your_profile():
 	if (login_session.get('username')!=None):
 		user1=query_by_username(login_session['username'])
+		print(user1.donate)
 		companys = (user1.donate).split(" ")
+		print(companys)
 		stringofnames = " "
 		for a in companys:
-			b = query_comp_id(int(a)) 
-			stringofnames+= " " + b.name
+			try:
+				b = query_comp_id(int(a)) 
+				stringofnames+= " " + b.name
+			except:
+				continue
 		return render_template("profile.html", user1=user1, stringofnames = stringofnames)
 	else:	
 		return redirect(url_for('home'))
