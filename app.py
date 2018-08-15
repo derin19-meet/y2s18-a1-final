@@ -12,7 +12,11 @@ app.config['SECRET_KEY'] = "Your_secret_string"
 # App routing code here
 @app.route('/')
 def home():
-    return render_template('home.html')
+	if (login_session.get('username')!=None):
+		user1=query_by_username(login_session['username'])
+		return render_template('home.html', user1 = user1)
+	else:
+		return render_template('home_witout_user.html')
 
 
 @app.route('/addcompany', methods=['GET', 'POST'])
@@ -57,13 +61,17 @@ def add_to_profile(comp_id):
 def your_profile():
 	if (login_session.get('username')!=None):
 		user1=query_by_username(login_session['username'])
-		# companys = (user1.donate).split(" ")
-		# stringofnames = " "
-		# for a in companys:
-		# 	c = a
-		# 	b = query_comp_id(c) 
-		# 	stringofnames+= " " + b.name
-		return render_template("profile.html", user1=user1)
+		print(user1.donate)
+		companys = (user1.donate).split(" ")
+		print(companys)
+		stringofnames = " "
+		for a in companys:
+			try:
+				b = query_comp_id(int(a)) 
+				stringofnames+= " " + b.name
+			except:
+				continue
+		return render_template("profile.html", user1=user1, stringofnames = stringofnames)
 	else:	
 		return redirect(url_for('home'))
 
@@ -82,8 +90,11 @@ def user_login():
 
 @app.route('/logout')
 def user_logout():
+	if (login_session.get('username')!=None):
 		del login_session['id']
 		del login_session['username']
+		return redirect(url_for('home'))
+	else:
 		return redirect(url_for('home'))
 
 

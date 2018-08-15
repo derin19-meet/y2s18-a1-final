@@ -51,5 +51,5 @@ def query_by_username(username):
 	return user
 def add_comp_to_user(user, compid):
 
-	user.donate+= " " + compid
+	user.donate+= compid + " " 
 	return user
