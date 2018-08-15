@@ -64,9 +64,9 @@ def your_profile():
 		companys = (user1.donate).split(" ")
 		stringofnames = " "
 		for a in companys:
-			b = query_comp_id(a) 
+			b = query_comp_id(int(a)) 
 			stringofnames+= " " + b.name
-		return render_template("profile.html", user1=user1, stringofnames = stringofname)
+		return render_template("profile.html", user1=user1, stringofnames = stringofnames)
 	else:	
 		return redirect(url_for('home'))
 
@@ -85,8 +85,11 @@ def user_login():
 
 @app.route('/logout')
 def user_logout():
+	if (login_session.get('username')!=None):
 		del login_session['id']
 		del login_session['username']
+		return redirect(url_for('home'))
+	else:
 		return redirect(url_for('home'))
 
 
