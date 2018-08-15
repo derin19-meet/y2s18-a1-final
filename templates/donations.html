@@ -1,41 +1,43 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+    <!-- <head>
         <title>Companies</title>
         <link rel="stylesheet" type="text/css" href="../static/donations.css">
-    </head>
+    </head> -->
 
-    <body>
-        {%extends "home.html" %}
-        {%block navbar%}{%endblock%}
-        <div class="back">
-                    <a class="homebtn"><a href="/">Home</a>
+    {%block css%}<link rel="stylesheet" type="text/css" href="../static/donations.css">{%endblock%}
+    {%navbar%}{%endblock%}
+    {%block body%}
+        
+        
+            <div class="back">
+                        <a class="homebtn"><a href="/">Home</a>
+                    
+            </div>
+                <a class="homebtn"><a href="/logout">Logout</a>
+                <h1 class="kind">  {{comp_kind}} companies:</h1>  
+                {% for a in things %}       
                 
-        </div>
-            <a class="homebtn"><a href="/logout">Logout</a>
-            <h1 class="kind">  {{comp_kind}} companies:</h1>  
-            {% for a in things %}       
+        
+    
+        <div>  
+            <h2 class = "name">{{a.name}}</h2>
+            <h3 class="info"><u>info:</u> {{a.info}}</h3>
+            <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>
             
+            <h3 class="website"><u>link to the Company website:</u></h3>
+            <a class = "website"><a href="{{a.link}}"></a>
+            <h3>if you donated to this company, please hit "Donated" button</h3>
+            <a href="{{url_for('add_to_profile', comp_id=a.id)}}"><button type="button">Donated</button></a>
+        </div>
+    
+            
+            {% endfor %}        
+    
+            {%if comp_kind==food%}
+            <img src="../static/food.png">
+            {%endif%}
+    
+    {%endblock%}
     
 
-    <div>  
-        <h2 class = "name">{{a.name}}</h2>
-        <h3 class="info"><u>info:</u> {{a.info}}</h3>
-        <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>
-        
-        <h3 class="website"><u>link to the Company website:</u></h3>
-        <a class = "website"><a href="{{a.link}}"></a>
-        <h3>if you donated to this company, please hit "Donated" button</h3>
-        <a href="{{url_for('add_to_profile', comp_id=a.id)}}"><button type="button">Donated</button></a>
-    </div>
-
-        
-        {% endfor %}        
-
-        {%if {{comp_kind}}==food%}
-        <img src="../static/food.png"
-
-
-       
-</body>
-</html>
