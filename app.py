@@ -89,11 +89,8 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-	if (login_session['username']!=None):
-		user1=query_by_username(login_session['username'])
-		return render_template("about.html", user1=user1)
-	else:
-		return redirect(url_for('home'))
+	return render_template("about.html")
+
 
 
 
