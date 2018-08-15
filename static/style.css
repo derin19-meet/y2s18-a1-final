@@ -131,6 +131,7 @@ ul{
         color: white;
         position: relative;
         top: 50%; }
+
     
 h1{text-align:center;}
 h3{text-align:center;}
@@ -353,7 +354,7 @@ p{
     text-decoration-line: none;
     position: fixed;
     text-align: center;
-    top: 50%;
+    top: 55%;
     left: 40%;
 }
 
@@ -388,7 +389,14 @@ p{
     font-size: 12px;
 }
 
-
+#name{
+    color: white;
+    opacity: 0.6;
+    z-index: 100;
+    position: fixed;
+    top: 10.5%;
+    left: 2%;
+}
 #log{
     width: 40px;
     height:10px;
@@ -398,7 +406,7 @@ p{
     text-decoration-line: none;
     position: fixed;
     right: 40%;
-    top: 50%;
+    top: 55%;
     
 }
 
