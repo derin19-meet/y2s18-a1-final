@@ -162,3 +162,8 @@ p {
 #bottom{
     background-color: #e6e6e6;
 }
+
+.homep:hover {
+    background-color: white;
+    color: #ff0080;
+}
