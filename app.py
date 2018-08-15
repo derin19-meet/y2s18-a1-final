@@ -68,7 +68,7 @@ def your_profile():
 		for a in companys:
 			try:
 				b = query_comp_id(int(a)) 
-				stringofnames+= " " + b.name
+				stringofnames+= ", " + b.name
 			except:
 				continue
 		return render_template("profile.html", user1=user1, stringofnames = stringofnames)
