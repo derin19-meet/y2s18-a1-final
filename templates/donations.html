@@ -6,6 +6,8 @@
     </head>
 
     <body>
+        {%extends "home.html" %}
+        {%block navbar%}{%endblock%}
         <div class="back">
                     <a class="homebtn"><a href="/">Home</a>
                 
@@ -13,12 +15,14 @@
             <a class="homebtn"><a href="/logout">Logout</a>
             <h1 class="kind">  {{comp_kind}} companies:</h1>  
             {% for a in things %}       
+            
     
 
     <div>  
         <h2 class = "name">{{a.name}}</h2>
         <h3 class="info"><u>info:</u> {{a.info}}</h3>
         <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>
+        
         <h3 class="website"><u>link to the Company website:</u></h3>
         <a class = "website"><a href="{{a.link}}"></a>
         <h3>if you donated to this company, please hit "Donated" button</h3>
@@ -27,6 +31,10 @@
 
         
         {% endfor %}        
+
+        {%if {{comp_kind}}==food%}
+        <img src="../static/food.png"
+
 
        
 </body>
