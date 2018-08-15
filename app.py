@@ -36,15 +36,15 @@ def add_user_route():
 
 @app.route('/choice')
 def choose():
-	if (login_session['username']!=None):
+	if (login_session.get('username')!=None):
 		user1=query_by_username(login_session['username'])
 		return render_template("user.html", user1=user1)
 	else:
-		return redirect(url_for('home'))
+		return render_template("login.html")
 
 @app.route('/donate_to_comp/<comp_id>')
 def add_to_profile(comp_id):
-	if (login_session['username']!=None):
+	if (login_session.get('username')!=None):
 		user1=query_by_username(login_session['username'])
 		add_comp_to_user(user1, comp_id)
 		comp1 = query_comp_id(comp_id)
@@ -55,7 +55,7 @@ def add_to_profile(comp_id):
 
 @app.route('/profile')
 def your_profile():
-	if (login_session['username']!=None):
+	if (login_session.get('username')!=None):
 		user1=query_by_username(login_session['username'])
 		# companys = (user1.donate).split(" ")
 		# stringofnames = " "
@@ -89,24 +89,16 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-	if (login_session['username']!=None):
-		user1=query_by_username(login_session['username'])
-		return render_template("about.html", user1=user1)
-	else:
-		return redirect(url_for('home'))
+	return render_template("about.html")
+
 
 
 
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
-	if (login_session['username']!=None):
-		user1=query_by_username(login_session['username'])
-		things = query_by_kind(comp_kind)
-		return render_template('donations.html', things=things, comp_kind=comp_kind, user1=user1)
-	else:
-		things = query_by_kind(comp_kind)
-		return render_template('donations.html', things=things, comp_kind=comp_kind)	
-
+	user1=query_by_username(login_session['username'])
+	things = query_by_kind(comp_kind)
+	return render_template('donations.html', things=things, comp_kind=comp_kind, user1=user1)
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
