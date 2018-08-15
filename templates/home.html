@@ -10,7 +10,8 @@
 <body>
 
         <link rel="stylesheet" type="text/css" href='../static/style.css'>
-    
+
+        {% block navbar %}
         <ul style="list-style-type:none">
         <div id="navbar">
         <div class="nav" id="home_button">
@@ -20,6 +21,7 @@
         <div class="nav"><li><a href="/about" class="block">About</a></li></div>
     </div> 
       </ul>
+      {%endblock%}
 
     <!-- <div class="Top_right">
         <a href="/about" class="Button" id="about">About Us</a>
