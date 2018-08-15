@@ -18,17 +18,52 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
+.logout{
+    float: left;
+    list-style:none;
+}
+.logout{
+    background-color: #ff0080;
+    border: none;
+    color: white;
+    padding: 8px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: "Lato", "sans-serif";
+}
 
+.logout:hover {
+    background-color: white;
+    color: #ff0080;
+}
 
 h1 {
     color:white;
     font-weight:900;
     position: relative;
     left: 285px;
-    top:50px;
+    top:20px;
     font-family: "Lato", "sans-serif";
 }
-
+h2 {
+    color:white;
+    font-weight:900;
+    position: relative;
+    left: 100px;
+    top:20px;
+    font-family: "Lato", "sans-serif";
+}
+h3 {
+    color:white;
+    font-weight:900;
+    position: relative;
+    left: 165px;
+    top:70px;
+    font-family: "Lato", "sans-serif";
+}
 
 .container {
     position: relative;
