@@ -29,21 +29,45 @@ def add_user_route():
 		return render_template('newprofile.html')
 	else:
 		if (request.form["password"]==request.form["repassword"]):
-			add_user(request.form['username'],request.form["password"])
-			return redirect(url_for('choose'))
+			add_user(request.form['username'],request.form["password"] , "")
+			return redirect(url_for('home'))
 		else:
 			return render_template('newprofile.html')
 
 @app.route('/choice')
 def choose():
-    return render_template("user.html")
+	if (login_session.get('username')!=None):
+		user1=query_by_username(login_session['username'])
+		return render_template("user.html", user1=user1)
+	else:
+		return render_template("login.html")
+
+@app.route('/donate_to_comp/<comp_id>')
+def add_to_profile(comp_id):
+	if (login_session.get('username')!=None):
+		user1=query_by_username(login_session['username'])
+		add_comp_to_user(user1, comp_id)
+		comp1 = query_comp_id(comp_id)
+	return redirect(url_for("donate_something",comp_kind=comp1.kind))
+
+
+
 
 @app.route('/profile')
 def your_profile():
-    return render_template("profile.html")
+	if (login_session.get('username')!=None):
+		user1=query_by_username(login_session['username'])
+		# companys = (user1.donate).split(" ")
+		# stringofnames = " "
+		# for a in companys:
+		# 	c = a
+		# 	b = query_comp_id(c) 
+		# 	stringofnames+= " " + b.name
+		return render_template("profile.html", user1=user1)
+	else:	
+		return redirect(url_for('home'))
 
-
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])	
 def user_login():
 	if request.method == 'POST':
 		if (check_user(request.form['username'],request.form["password"])):
@@ -65,14 +89,16 @@ def user_logout():
 
 @app.route('/about')
 def aboutus():
-		return render_template("about.html")
+	return render_template("about.html")
+
+
 
 
 @app.route('/donate/<comp_kind>')
 def donate_something(comp_kind):
-    things = query_by_kind(comp_kind)
-    return render_template('donations.html', things=things, comp_kind=comp_kind)
-
+	user1=query_by_username(login_session['username'])
+	things = query_by_kind(comp_kind)
+	return render_template('donations.html', things=things, comp_kind=comp_kind, user1=user1)
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
