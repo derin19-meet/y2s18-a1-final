@@ -59,5 +59,22 @@ h3 {color: white;
     background-color: white;
     color: #ff0080;
 }
+a:link {
+    color: white;
+}
 
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff0080;
+}
+
+/* selected link */
+a:active {
+    color: #ff0080;
+}
 

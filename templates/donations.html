@@ -16,10 +16,8 @@
     <div>  
         <h2 class = "name">{{a.name}}</h2>
         <h3 class="info"><u>info:</u> {{a.info}}</h3>
-        <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>
-        
-        <h3 class="website"><u>link to the Company website:</u></h3>
-        <a class = "website"><a href="{{a.link}}"></a>
+        <h3 class="kind"><u>what does the company take:</u> {{a.kind}}</h3>    
+        <h3><a class = "website" href="{{a.link}}">click here and jump to Company website</a></h3>
         <h3>if you donated to this company, please hit "Donated" button</h3>
         <a href="{{url_for('add_to_profile', comp_id=a.id)}}"><button type="button">Donated</button></a>
     </div>
